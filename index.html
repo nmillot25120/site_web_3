@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haute Couture & Beauté | Les Grandes Marques</title>
+    
+    <link rel="stylesheet" href="style.css"> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>💎 Haute Couture & Beauté 💄</h1>
+        <nav>
+            <ul>
+                <li><a href="#marques">Les Marques</a></li>
+                <li><a href="#essayage">Essayage Virtuel</a></li>
+                <li><a href="#cosmetiques">Cosmétiques</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="container">
+            <h2>L'Élégance à Portée de Clic</h2>
+            <p>Découvrez l'univers des plus grandes maisons de mode et de beauté. De Chanel à Dior, explorez les tendances, l'histoire et l'innovation qui façonnent le luxe.</p>
+        </section>
+
+        <section id="essayage" class="container">
+            <h3>Essayage Virtuel : Créez Votre Look</h3>
+            
+            <div class="essayage-grid">
+                
+                <div class="mannequin-area">
+                    <div id="mannequin-wrapper">
+                        <img src="images/mannequin_base.png" alt="Mannequin de base" id="mannequin-base">
+                        
+                        <img src="images/vetement_robe_dior.png" alt="Vêtement actuel" id="vetement-actuel" class="vetement-calque" style="display: none;">
+                        <img src="images/accessoire_sac_chanel.png" alt="Accessoire actuel" id="accessoire-actuel" class="vetement-calque" style="display: none;">
+                        
+                        </div>
+                    <button id="reset-look">Réinitialiser le Look</button>
+                </div>
+                
+                <div class="selection-panel">
+                    <h4>Sélectionner un Article</h4>
+                    
+                    <div id="categories">
+                        <button class="cat-btn active" data-cat="robes">Robes</button>
+                        <button class="cat-btn" data-cat="manteaux">Manteaux</button>
+                        <button class="cat-btn" data-cat="sacs">Sacs</button>
+                        <button class="cat-btn" data-cat="maquillage">Maquillage</button>
+                    </div>
+
+                    <div id="article-list">
+                        <img src="images/mini_robe_versace.png" alt="Miniature Robe Versace" class="article-item" data-type="robe" data-image="images/vetement_robe_versace.png">
+                        <img src="images/mini_manteau_ysl.png" alt="Miniature Manteau YSL" class="article-item" data-type="manteau" data-image="images/vetement_manteau_ysl.png">
+                        </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="marques" class="container">
+            <h3>Les Maisons Incontournables</h3>
+            <div class="marque-cards">
+                <article class="card">
+                    <img src="images/logo_dior.png" alt="Logo Dior">
+                    <h4>Dior</h4>
+                    <p>Symbole d'élégance et de sophistication, Dior continue d'innover dans la haute couture et la parfumerie.</p>
+                </article>
+                
+                <article class="card">
+                    <img src="images/logo_chanel.png" alt="Logo Chanel">
+                    <h4>Chanel</h4>
+                    <p>L'héritage intemporel de Coco Chanel : le tweed, le sac matelassé et le célèbre N°5.</p>
+                </article>
+                
+                </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Haute Couture & Beauté. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>
